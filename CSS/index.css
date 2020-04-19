@@ -5,4 +5,11 @@
 .row div {
     border: 1px solid rgb(99, 97, 97);
     background-color: blanchedalmond;
+    
+}
+title{
+    font: 1.5em  sans-serif;
+}
+#navbar-brand{
+    font: 1.5em sans-serif;
 }

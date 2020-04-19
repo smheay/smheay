@@ -1,18 +1,23 @@
 # smheay
-Portfolio Project
+Portfolio Project:
 
 https://smheay.github.io/
-
 https://github.com/smheay/smheay.github.io
 
+
+jQuery
+https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/
+
+https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery
+
+
+Bootstrap Resources: 
+
 https://getbootstrap.com/
-
-How to bootstrap
 https://scrimba.com/g/gbootstrap4
+https://getbootstrap.com/docs/3.4/getting-started/
 
-Bootstrap Info - Cols needs to add to 12
-col-sm breakpoints
-class row no-gutter = no padding
+What is tab index?
 
-<div class="col-sm-6">column</div>
-<div class="col-sm-3 offset-sm-3">column</div>    spaced out
+https://webaim.org/techniques/keyboard/tabindex
+

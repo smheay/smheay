@@ -1,0 +1,65 @@
+<style>
+#navOutline{
+    cursor: pointer;
+}
+</style>
+
+<nav
+  class="navbar navbar-light bg-light navbar-expand-lg sticky-top"
+  id="navOutline"
+>
+  <!-- navbar-dark for dark theme -->
+  <!-- sticky top nav bar follows -->
+  <a class="navbar-brand" href="#">
+    <img
+      src="/Assests/Image/symbol.png"
+      width="30"
+      height="30"
+      class="d-inline-block align-top"
+      alt="Staff"
+    />
+    Shannon Meyer
+  </a>
+  <!-- Toggle buttton for small screens set with navbar expand lg in nav class-->
+  <button
+    class="navbar-toggler"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto" id="navList">
+      <li class="navbar-item">
+        <a href="/index.html" class="nav-link" >Homepage</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/Page/projects.html" class="nav-link">Projects</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/Page/aboutme.html" class="nav-link" >About Me</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/Page/Contact.html" class="nav-link"> Contact </a>
+      </li>
+    </ul>
+  </div>
+
+<!-- Edit this later -->
+<script>
+  $(function(){
+    var current = location.pathname;
+    $('li a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})
+
+
+</script>
+
+</nav>
+
