@@ -3,43 +3,117 @@
   <head>
     <!-- Required meta tags  -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="/JS/script.js"></script>
     <!-- Other CSS  -->
-    
+
     <link rel="stylesheet" href="/CSS/index.css" />
 
     <title>Contact</title>
   </head>
-  <body>
+  <body >
 
-   <div id="nav-placeholder"></div> 
+    <div id="nav-placeholder"></div>
+
+   
+      <div class="rounded container-fluid bg-light m-5 mx-auto w-50">
+        <fieldset class="form-border">
+          <legend class="form-border-legend text-center font-weight-bold">
+            Contact Me!
+          </legend>
+  
+          <form>
+            <div class="form-group">
+              <!--        
+             <span class="required"> (required) </span> 
+              from http://web-accessibility.carnegiemuseums.org/code/forms/
+              suggested to use over * -->
+              
+              <label for="nameform1">Name <span class="required">
+                (required)
+              </span> </label>
+              
+              <input
+                type="text"
+                class="form-control"
+                id="nameform1"
+                aria-describedby="nameHelp"
+                placeholder="Enter Name"
+                required
+              />
+              <div class="invisible" id="nameHelp">
+                Enter your full name
+              </div> 
+  
+              <label for="emailaddressform1">Email address * </label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailaddressform1"
+                aria-describedby="emailHelp"
+                placeholder="Enter Email"
+                required
+              />
+              <div class="invisible" id="emailHelp">
+                Enter your email address
+              </div>
+  
+              <label for="textareaform1">What would you like to say?</label>
+              <textarea
+                class="form-control"
+                id="textareaform1"
+                aria-describedby="textareaHelp"
+                rows="5"
+              ></textarea>
+              <div class="invisible" id="textareaHelp">
+                Type a message
+              </div>
+
+              <div class="btn-group container">
+                <button
+                  class="rounded mr-1 btn btn-primary font-weight-bold"
+                  type="submit"
+                  aria-label="submit form"
+                >
+                  Submit
+                </button>
+                <input
+                  class="rounded btn btn-secondary font-weight-bold"
+                  type="reset"
+                  value="Reset"
+                  aria-label="submit form"
+                />
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </div>
 
 
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
- 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1 offset-md-5">add image</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 offset-md-2">add image</div>
+        <div class="col-md-1 offset-md-5">add image</div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 offset-md-5 "> add image</div>
+      </div>
+    </div>
 
 
+  
   </body>
 </html>

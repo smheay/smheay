@@ -1,15 +1,24 @@
-*{
-    border: 1px solid rgb(99, 97, 97);
+* {
+  border: 1px solid rgb(99, 97, 97);
 }
 
 .row div {
-    border: 1px solid rgb(99, 97, 97);
-    background-color: blanchedalmond;
-    
+  border: 1px solid rgb(124, 37, 37);
+  /* background-color: blanchedalmond */;
 }
-title{
-    font: 1.5em  sans-serif;
+title {
+  font: 1.5em sans-serif;
 }
-#navbar-brand{
-    font: 1.5em sans-serif;
+#navbar-brand {
+  font: 1.5em sans-serif;
+}
+
+/* Set a background image by replacing the URL below */
+body{
+  background: url("/Assests/Image/back.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  
 }
