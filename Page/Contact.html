@@ -31,81 +31,9 @@
           <legend class="form-border-legend text-center font-weight-bold">
             Contact Me!
           </legend>
-  
-          <form name="submit-to-google-sheet">
-            <div class="form-group">
-              <!--        
-             <span class="required"> (required) </span> 
-              from http://web-accessibility.carnegiemuseums.org/code/forms/
-              suggested to use over * -->
-              
-              <label for="nameform1">Name <span class="required">
-                (required)
-              </span> </label>
-              
-              <input
-                name="name"
-                type="text"
-                class="form-control"
-                id="nameform1"
-                aria-describedby="nameHelp"
-                placeholder="Enter Name"
-                required
-              />
-              <div class="invisible" id="nameHelp">
-                Enter your first name
-              </div> 
-  
-              <label for="emailaddressform1">Email address <span class="required">
-                (required)
-              </span>  </label>
-              <input
-                name="email"
-                type="email"
-                class="form-control"
-                id="emailaddressform1"
-                aria-describedby="emailHelp"
-                placeholder="Enter Email"
-                required
-                
-              />
-              <div class="invisible" id="emailHelp">
-                Enter your email address
-              </div>
-  
-              <label for="textareaform1">What would you like to say?</label>
-              <textarea
-                name="message"
-                class="form-control" style="max-height: 300px; background-color: rgba(235, 211, 182, 0.404);"
-                id="textareaform1"
-                aria-describedby="textareaHelp"
-                rows="4"
-                maxlength="250"
-              ></textarea>
-              <div class="invisible" id="textareaHelp">
-                Type a message
-              </div>
-
-              <div class="btn-group container">
-                <button
-                  class="rounded mr-1 btn btn-primary font-weight-bold"
-                  type="submit"
-                  aria-label="submit form"
-                >
-                  Submit
-                </button>
-                <input
-                  class="rounded btn btn-secondary font-weight-bold"
-                  type="reset"
-                  value="Reset"
-                  aria-label="reset text"
-                />
-              </div>
-            </div>
-          </form>
-        </fieldset>
+     
       </div>
-
+  
       <form name="submit-to-google-sheet">
         <input name="email" type="email" placeholder="Email" required>
         <input name="firstName" type="text" placeholder="First Name">
@@ -115,7 +43,8 @@
 
 
       <script>
-        const scriptURL = 'https://script.google.com/a/pdx.edu/macros/s/AKfycbzdVnz3C_x0yYm7eVqCfANTYOA5wFVsBW_CpFzSzgp44wsIV_eO/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzdVnz3C_x0yYm7eVqCfANTYOA5wFVsBW_CpFzSzgp44wsIV_eO/exec'
+                           
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
