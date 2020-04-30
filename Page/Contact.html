@@ -32,7 +32,7 @@
             Contact Me!
           </legend>
   
-          <form>
+          <form name="submit-to-google-sheet">
             <div class="form-group">
               <!--        
              <span class="required"> (required) </span> 
@@ -44,6 +44,7 @@
               </span> </label>
               
               <input
+                name="name"
                 type="text"
                 class="form-control"
                 id="nameform1"
@@ -55,14 +56,18 @@
                 Enter your full name
               </div> 
   
-              <label for="emailaddressform1">Email address * </label>
+              <label for="emailaddressform1">Email address <span class="required">
+                (required)
+              </span>  </label>
               <input
+                name="email"
                 type="email"
                 class="form-control"
                 id="emailaddressform1"
                 aria-describedby="emailHelp"
                 placeholder="Enter Email"
                 required
+                
               />
               <div class="invisible" id="emailHelp">
                 Enter your email address
@@ -70,10 +75,12 @@
   
               <label for="textareaform1">What would you like to say?</label>
               <textarea
-                class="form-control"
+                name="message"
+                class="form-control" style="max-height: 300px; background-color: rgba(235, 211, 182, 0.404);"
                 id="textareaform1"
                 aria-describedby="textareaHelp"
-                rows="5"
+                rows="4"
+                maxlength="250"
               ></textarea>
               <div class="invisible" id="textareaHelp">
                 Type a message
@@ -91,7 +98,7 @@
                   class="rounded btn btn-secondary font-weight-bold"
                   type="reset"
                   value="Reset"
-                  aria-label="submit form"
+                  aria-label="reset text"
                 />
               </div>
             </div>
@@ -100,20 +107,19 @@
       </div>
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1 offset-md-5">add image</div>
-      </div>
-      <div class="row">
-        <div class="col-md-1 offset-md-2">add image</div>
-        <div class="col-md-1 offset-md-5">add image</div>
-      </div>
-      <div class="row">
-        <div class="col-md-1 offset-md-5 "> add image</div>
-      </div>
-    </div>
+      <script>
+        const scriptURL = 'https://script.google.com/a/pdx.edu/macros/s/AKfycbzdVnz3C_x0yYm7eVqCfANTYOA5wFVsBW_CpFzSzgp44wsIV_eO/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
-
+    
   
   </body>
 </html>
