@@ -1,29 +1,34 @@
 * {
-  /*  border: 1px solid rgb(99, 97, 97);  */
+ /*  border: 1px solid rgb(99, 97, 97); */
 }
-
 
 title {
   font: 1.5em sans-serif;
 }
 
-
 #navbar-brand {
   font: 1.5em sans-serif;
 }
 
-
 /* Set a background image by replacing the URL below */
-body{
+body {
   background: url("/Assests/Image/back2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-
+}
+.main-wrapper {
+  height: 100vh;
 }
 
+/* 
 footer {
   
   bottom: 0;
+} 
+ */
+
+.card-title {
+  text-align: center;
 }

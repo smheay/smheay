@@ -6,9 +6,8 @@ $(document).ready(function () {
     // Loads the Nav bar
     $("#nav-placeholder").load("/Content/navbar.html");
 
-
-    // Sets the active class on nav bar
- 
+    
+    $("#footer-placeholder").load("/Content/footer.html");
 
 
 });
