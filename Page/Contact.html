@@ -60,7 +60,7 @@
                             Enter your lastname
                         </div>
 
-                        <label class="h5" for="textareaform1">What would you like to say?</label>
+                        <label class="h5" for="textareaform1">Message</label>
                         <textarea name="message" class="form-control" style="max-height: 300px;" id="textareaform1" aria-describedby="textareaHelp" rows="4" maxlength="250"></textarea>
                         <div class="invisible" id="textareaHelp">
                             Type a message
@@ -93,8 +93,7 @@
             method: "POST",
             body: new FormData(form)
         }).then((response) => console.log("Success!", response)).catch((error) => console.error("Error!", error.message));
+        form.reset();
     });
-
-    form.reset();
 
 </script>
